@@ -14,15 +14,18 @@ const milUniElement = document.getElementById('milUni');
 const splitsElement = document.getElementById('splits');
 
 function printTime() {
-  // ... your code goes here
+  let seconds = chronometer.getSeconds();
+  let minutes = chronometer.getMinutes();
+  let twoDigiSeconds = chronometer.computeTwoDigitNumber(seconds);
+  let twoDigiMinutes = chronometer.computeTwoDigitNumber(minutes);
 };
 
 function printMinutes() {
-  // ... your code goes here
+  return chronometer.getMinutes();
 }
 
 function printSeconds() {
-  // ... your code goes here
+  return chronometer.getSeconds();
 }
 
 // ==> BONUS
